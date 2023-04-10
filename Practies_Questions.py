@@ -46,3 +46,58 @@ for i in range(1,50):
         count+=1
 print("\nno of occuring multiples :",count)
 
+
+
+Exercise 4: Write a program in Python to swap between two numbers without using a third variable.
+  
+  Hint
+Input:
+a = 4
+b = 6
+
+Expected Output
+After swapping
+a is 6 and b is 4
+
+
+sol::
+    
+a=int(input("enter the a: "))
+b=int(input("enter the b: "))
+a=a+b
+b=a-b
+a=a-b
+print("a = ",a,"and b = ",b)
+
+
+Exercise 5: Write a program to check wheteher the given word is vowel or consonent.
+  Hint 1:
+Vowels are ‘a’, ‘e’, ‘i’, ‘o’, ‘u’
+Input : a
+
+Expected Output:
+a is vowel
+
+Hint 2:
+Vowels are ‘a’, ‘e’, ‘i’, ‘o’, ‘u’
+Input : d
+
+Expected Output:
+d is consonent
+
+
+sol::
+    
+ch=input("enter the alphabets: ")
+if ch in ['a','e','i','o','u']or['A','E','I','O','U']:
+    print("this is a vowel: ",ch)
+else:
+    print("this is a consonent: ",ch)
+
+  
+  
+  
+  
+  
+  
+
