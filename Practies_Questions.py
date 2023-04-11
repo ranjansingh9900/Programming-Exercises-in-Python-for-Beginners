@@ -98,6 +98,36 @@ else:
   
   
   
+  # Exercise 6: Write a program to swap two numbers without using a third variable.
+
+sol::
+    
+    
+    
+a=int(input("enter the value of a: "))
+b=int(input("enter the valur of b: "))
+a=a+b
+b=a-b
+a=a-b
+print("a = ",a,"b = ",b)
+
+
+
+# Exercise 7: Write a program to count the occurence of even number and odd number between the range 10 – 55.
+
+
+sol::
+    evenNumber=0
+oldNumber=0
+for i in range(10,55):
+    if i%2==0:
+        evenNumber+=1
+    else:
+        oldNumber+=1
+print("occurence of even",evenNumber)
+print("occurence of old",oldNumber)
+
+
   
   
 
