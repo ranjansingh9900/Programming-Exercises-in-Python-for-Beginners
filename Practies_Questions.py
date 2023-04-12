@@ -130,4 +130,66 @@ print("occurence of old",oldNumber)
 
   
   
+ # Exercise 9: Write a program in Python to calculates acceleration given initial velocity v1, final velocity v2, start time t1, and end time t2.
 
+  
+  sol::
+      
+      
+v1=int(input("enter the velocity1: "))
+v2=int(input("enter the velocity2: "))
+t1=int(input("enter the time1: "))
+t2=int(input("enter the time2: "))
+a=((v2-v1)/(t2-t1))
+print("acceleration: ",a)
+  
+  
+  
+  
+
+  def acceleration(v1,v2,t1,t2):
+    a=((v2-v1)/(t2-t1))
+    return a
+
+v1=int(input("enter the velocity1: "))
+v2=int(input("enter the velocity2: "))
+t1=int(input("enter the time1: "))
+t2=int(input("enter the time2: "))
+print("acceleration: ",acceleration(v1,v2,t1,t2))
+
+
+
+# Exercise 10: Write a program in Python to sort 3 numbers without using loops or conditional statements.
+
+
+sol::
+    
+val1=int(input("enter the val1: "))
+val2=int(input("enter the val2: "))
+val3=int(input("enter the val3: "))
+print("\nbefore sorting : ",val1,val2,val3)
+s=[]
+s.append(val1)
+s.append(val2)
+s.append(val3)
+
+s.sort()
+print(s)
+
+
+
+# Exercise 11: Write a program in Python to print number ranging from 1 to 25 but excluding number which is the multiples of 5.
+
+
+# sol::
+
+for i in range(10,25):
+    if i%5==0:
+        # continue
+        pass
+    else:
+        print(i,end=" ")
+
+        
+        
+        
