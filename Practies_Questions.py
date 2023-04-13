@@ -192,4 +192,85 @@ for i in range(10,25):
 
         
         
+
         
+        
+        
+        # Exercise 12: Write a program in Python to count the occurrence of a specific value in a list.
+
+
+# sol::
+
+list=[1,3,3,4,2,3,4,6,3,5,3,3,3]
+count=0
+for i in range(len(list)):
+    if list[i]==3:
+        count+=1
+    else:
+        continue
+print("occurrence of 3 are ",count," times")
+
+
+
+
+
+# Exercise 13: Write a program in Python to count the occurrence of a specific word in a string.
+
+
+# sol::
+
+
+string_ = "adam is a boy and adam loves to play cricket."
+str=input("enter the word which you want to fine in the string: ")
+main=string_.split(" ")
+count=0
+for i in range(len(main)):
+    if main[i]==str:
+        count+=1
+print(str," occurrence ",count)
+
+
+
+
+\# Exercise 14: Write a  program in Python to check whether the given number is even or odd.
+
+
+
+# sol::
+
+
+a=int(input("enter a number to check whether is even or odd: "))
+if a%2==0:
+    print("this is an even: ",a)
+else:
+    print("this is an odd: ",a)
+
+    
+    
+    # Exercise 15: Given two integer numbers return their product. If the product is greater than 500, then return their sum.
+
+
+# sol::
+
+a=int(input("enter a number a: "))
+b=int(input("enter a number b: "))
+if a*b>500:
+    print(a*b)
+else:
+    print(a+b)
+    
+    other way::
+    
+    def check(a,b):
+    if a*b>500:
+        print(a*b)
+    else:
+        print(a+b)
+
+a=int(input("enter a number a: "))
+b=int(input("enter a number b: "))
+check(a,b)
+
+
+
+
