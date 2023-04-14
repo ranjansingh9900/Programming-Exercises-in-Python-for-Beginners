@@ -274,3 +274,107 @@ check(a,b)
 
 
 
+
+# Exercise 16: Write a program to print the greatest of three number.
+
+# sol::
+
+a=int(input("enter the number a: "))
+b=int(input("enter the number b: "))
+c=int(input("enter the number c: "))
+if (a>b and a>c):
+    print("a is the greater number: ",a)
+elif (b>a and b>c):
+    print("b is greater number : ",b)
+else: 
+    print("c is grater number: ",c)
+
+
+
+    
+# Exercise 17: Write a program to print all numbers multiple of 5 from the range 10 – 50. 
+
+# sol::
+
+
+for i in range(10,50):
+    if( i%5==0):
+        print(i,end=" ")
+        
+        
+        
+        
+# other  way to sol::
+
+def multiple(x,y):
+    for i in range(x,y):
+        if( i%5==0):
+            print(i,end=" ")
+
+x=int(input("enter initial point x: "))
+y=int(input("enter final point y: "))
+multiple(x,y)
+
+
+
+
+
+# other way to sol::
+
+def check(list):
+    if(list[0]==list[len(list)-1]):
+        print("true")
+    else:
+        print("false")
+    
+list=[1,2,3,4,5,6,7,1]
+check(list)
+
+
+
+# Exercise 19: Write a program to convert, the Fahrenheit value to Celcius. [Formula : F=9/5(c)+32] 
+
+# sol::
+
+# f=int(input("enter the fahrenheit: "))
+# c=(f-32)*5/9
+# print("fahrenheit to celcius : ",c)
+
+# other way
+
+def fahrenheitToCelcius(f):
+    c=(f-32)*5/9
+    print("fahrenheit to celcius : ",c)
+
+
+f=int(input("enter the fahrenheit: "))
+fahrenheitToCelcius(f)
+
+
+
+
+# Exercise 20: Write a program to print a right angled triangle pattern,  Please find hint below:-
+
+
+# sol::
+
+
+a=int(input("enter the a: "))
+def print_pattern(a):
+    for i in range(a):
+        for j in range(i):
+            print("*",end=" ")
+        print("\n")
+print_pattern(a)
+
+
+
+
+
+
+
+
+
+
+
+
