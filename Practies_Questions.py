@@ -372,6 +372,76 @@ print_pattern(a)
 
 
 
+# 21. Write a Python program to sum all the items in a list.
+
+
+# sol::
+
+def sum_list(list):
+    sum=0
+    for i in list:
+        sum+=i
+    print("list sum = ",sum)
+
+list=[2,5,8,3,9]
+sum_list(list)
+
+
+
+# Write a Python program to multiply all the items in a list.
+
+# sol::
+
+
+def multi_list(list):
+    multipl=1
+    for i in list:
+        multipl*=i
+    print("list multi = ",multipl)
+
+list=[2,5,8,3,9]
+multi_list(list)
+
+
+
+
+
+# 23. Write a Python program to get the largest number from a list.
+
+
+# sol::
+
+def largest_number_list(list):
+    max=0
+    for i in list:
+        if i>max:
+            max=i
+    return max
+
+
+list=[2,5,8,3,9]
+print(largest_number_list(list))
+
+
+# 24. Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same. Go to the editor
+# Sample List : ['abc', 'xyz', 'aba', '1221']
+# Expected Result : 2
+
+
+
+# sol::
+
+def count_string(list):
+    count=0
+    for x in list:
+        if len(x)>1 and x[0]==x[-1]:
+            count+=1
+    return count
+
+
+list = ['aba', 'xyx', 'abb', '222']
+
+print(count_string(list))
 
 
 
