@@ -372,6 +372,8 @@ print_pattern(a)
 
 
 
+
+
 # 21. Write a Python program to sum all the items in a list.
 
 
