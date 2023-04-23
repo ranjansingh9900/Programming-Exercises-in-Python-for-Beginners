@@ -448,5 +448,18 @@ print(count_string(list))
 
 
 
+# 25. Write a Python program to find out what version of Python you are using
+
+import sys
+print("system version")
+print(sys.version)
+print("System.info")
+print(sys.version_info)
+
+
+
+
+
+
 
 
