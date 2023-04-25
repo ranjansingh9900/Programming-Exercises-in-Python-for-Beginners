@@ -474,5 +474,42 @@ print(now.strftime("%Y-%M-%D  %H : %M : %S"))
 
 
 
+# 27. Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them
+
+
+list=[]
+first_name=input("enter first name: ")
+list.append(first_name)
+last_name=input("enter the last_name: ")
+list.append(last_name)
+i=len(list)-1
+# while i>=0:
+print(list[1]," ",list[0])
+    # i-=1
+
+  
+  
+  
+  
+  
+  
+  # 28. Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list and a tuple of those numbers.
+# Sample data : 3, 5, 7, 23
+# Output :
+# List : ['3', ' 5', ' 7', ' 23']
+# Tuple : ('3', ' 5', ' 7', ' 23')
+
+
+# sol:: 
+
+value=input("enter some comma separated number: ")
+list=value.split(",")
+tuple=tuple(list)
+print(list)
+print(tuple)
+
+
+
+
 
 
