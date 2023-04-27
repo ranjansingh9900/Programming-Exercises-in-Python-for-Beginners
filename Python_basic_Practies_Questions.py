@@ -512,4 +512,43 @@ print(tuple)
 
 
 
+# 29. Write a Python program that accepts a filename from the user and prints the extension of the file.
+# Sample filename : abc.java
+# Output : java
+
+
+file_name=input("enter the file name: ")
+f_ext=file_name.split(".")
+print(" the file extension is : "+ repr(f_ext[-1]))
+
+
+
+
+# 30. Write a Python program to display the first and last colors from the following list.
+# color_list = ["Red","Green","White" ,"Black"]
+
+
+# sol::
+
+color_list = ["Red","Green","White" ,"Black"]
+print(color_list[0],color_list[-1])
+
+
+
+
+# 30. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+# Sample value of n is 5
+# Expected Result : 615
+
+/sol::
+
+n=int(input("enter the number:" ))
+n1=int("%s"%n)
+n2=int("%s%s"%(n,n))
+n3=int("%s%s%s"%(n,n,n))
+
+print(n1+n2+n3)
+
+
+
 
