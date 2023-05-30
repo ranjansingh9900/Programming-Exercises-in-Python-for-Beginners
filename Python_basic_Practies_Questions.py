@@ -1,3 +1,8 @@
+whatsapp stop message 
+//////http://wa.me/settings
+
+
+
 Exercise 1: Write a program in Python to calculate the volume of a sphere.
   
 sol::
